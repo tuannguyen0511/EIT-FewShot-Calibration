@@ -1,0 +1,898 @@
+{
+  "status": "IMMUTABLE_K2_LOCK",
+  "phase": "RUNBOOK_2_AW_K2",
+  "created_utc": "2026-10-25T04:58:05.066061+00:00",
+  "no_EV_predictions_before_lock": true,
+  "inventory": {
+    "documents": {
+      "base_prereg": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\00_CONTEXT\\SPECS\\K2_PREREGISTRATION_V1.md",
+        "sha256": "3e04fe996e665371a95c3cfcf68897d56cbfb42e0b96747faa3ad89dcbd6a8b4",
+        "bytes": 4810
+      },
+      "amendment_A1": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\00_CONTEXT\\SPECS\\K2_PREREGISTRATION_V1_AMENDMENT_A1.md",
+        "sha256": "91394ec571e9b1f66414f228bdc5a356be7a9bce046e43704d573cbbfe384b79",
+        "bytes": 1853
+      },
+      "manifest": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\00_CONTEXT\\SPECS\\KTC_PATH_MANIFEST_V1.json",
+        "sha256": "847c04c266bfcca604785420faf3da44a214987d164469ddb6c7082060eb26b7",
+        "bytes": 14827
+      },
+      "C3_lock": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\C3_FINAL20_CONFIRMATORY\\CONFIG_LOCK_CAL_V1.json",
+        "sha256": "b2fdf410007a34bc2424b31bfb9de1bffbf111a8f177906ab9ab9e47c509312e",
+        "bytes": 8404
+      },
+      "CMP_selection": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\CMP_RELATED_METHODS\\CMP_LR_SELECTION_DEV_ONLY.json",
+        "sha256": "52ce598dd5c08b664de1621ef37185913ad657170a4dbadf1c07cb26bc558aaf",
+        "bytes": 17650
+      },
+      "K0_GT_SHA_list": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\SHA256SUMS_R2.txt",
+        "sha256": "d82171714fe9f6b3bb5b97e10f2055d1f00355faf752d19d24b2dd94bd7852d0",
+        "bytes": 10563
+      }
+    },
+    "core": {
+      "checkpoint": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\04_RUNS\\K1B_KTCB\\best_clean_dice_head.pt",
+        "sha256": "5bff866ba378ef79995783b8f4cbddc7234e7f902adb127f55c6839fabd07d1f",
+        "bytes": 111520335
+      },
+      "A_KTC": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K1A_KTC_SYNTH_AP\\A_KTC_sparse_2356x4096.npy",
+        "sha256": "83742e970b9423e8b7f5765508054e659edbb99bb1ffdcfcdaafbf1c9f24a3e1",
+        "bytes": 38600832
+      },
+      "M": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\04_RUNS\\K1B_KTCB\\M_simU0_1602x2356.npy",
+        "sha256": "3f19ca96b768990927f633b7be82679f9e44d65be2f863d482e4e8913a33baf0",
+        "bytes": 15097376
+      },
+      "Z0": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\04_RUNS\\K1B_KTCB\\Z0_operator_4096x2356.npy",
+        "sha256": "488e5c73ff0c77fd2d11778db44966c4032d99842c48dc43cbda41a0f4afda68",
+        "bytes": 38600832
+      },
+      "centre": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\04_RUNS\\K1B_KTCB\\K1B_IMAGE_CENTER_PREFLIGHT.json",
+        "sha256": "41af6c6a0a1a6583cd74e8d9339d6c1c018aa19467a828a9e0827a9a473e4e88",
+        "bytes": 187
+      },
+      "mesh_sparse": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\ktc\\vendor\\Mesh_sparse.mat",
+        "sha256": "9aeee4942bf418cde1c5610d71e2da98956f237578aad478584a1f34e77299b0",
+        "bytes": 466889
+      }
+    },
+    "references": {
+      "train_ref": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\Codes_Python\\TrainingData\\ref.mat",
+        "sha256": "105ad8efb5ebc00729b88e682760e5bf29ebb9d6b7db56cf695d9c1fb0b3e6c8",
+        "bytes": 19121
+      },
+      "eval_ref": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\evaluation_datasets\\level1\\ref.mat",
+        "sha256": "c4d885f4470f0c7142685f7b4183783cb94e993ebf03e1b371398f3203bcaeae",
+        "bytes": 19121
+      }
+    },
+    "targets": [
+      {
+        "id": "TR1",
+        "split": "train",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\Codes_Python\\TrainingData\\data1.mat",
+          "sha256": "40b4c9f86fd19d43c92c15beaa7f9ce6ba27b05000154824d1901ac936b5e9fa",
+          "bytes": 19151
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\Codes_Python\\GroundTruths\\true1.mat",
+          "sha256": "7caef811911a35b6ff9a9b4a6e74abeb872f86885306ca71f15627085eafd429",
+          "bytes": 907
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_TR1_mask64_R2.npy",
+          "sha256": "93df66758059abac3f4c5219f8eea3eb3705a53fe2152eec716ae62e23b50599",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_TR1_classes64_R2.npy",
+          "sha256": "48db4ea3ee629ae357c4a98cbd6679c68fdf2c8d38ab8dc167bf051ab40bf451",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "TR2",
+        "split": "train",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\Codes_Python\\TrainingData\\data2.mat",
+          "sha256": "8148ca2664e37e909b8d028547f7c870f06b03952697d336f10a37cc9142f42f",
+          "bytes": 19144
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\Codes_Python\\GroundTruths\\true2.mat",
+          "sha256": "e81e5a68aacdd25d007744dcab915af10015d4931cf40df980794a3efc838954",
+          "bytes": 825
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_TR2_mask64_R2.npy",
+          "sha256": "085d2c42dc7f58163083b2cd1833b958ed9a6ee45c48823b6ca7b23ca266d565",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_TR2_classes64_R2.npy",
+          "sha256": "c649b08ca172f97cf8d00edd390822c9c11d9d3fea3906a6387e5b8f9d8accd7",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "TR3",
+        "split": "train",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\Codes_Python\\TrainingData\\data3.mat",
+          "sha256": "6da48eaaff9078446ae2d76a46b74b723d7872eca8dccccfc74edad43a24fec0",
+          "bytes": 19094
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\Codes_Python\\GroundTruths\\true3.mat",
+          "sha256": "29ea20798de2f33d4f8ceba597a89148e0b990bf9be9c1e94c52c4c0b3313546",
+          "bytes": 648
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_TR3_mask64_R2.npy",
+          "sha256": "5a46aca315936095d2a6dc09c585d728c15509fb0f94d4af7395d553d7d68e0c",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_TR3_classes64_R2.npy",
+          "sha256": "b3fa5c14f97b4225ec393e2b0bbb438856d7a29b8b869e6bcd88f5523bbbc737",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "TR4",
+        "split": "train",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\Codes_Python\\TrainingData\\data4.mat",
+          "sha256": "eea6cec72f448e39c0c0b3794a7f297b70d473b930547c8cb0562461814a1058",
+          "bytes": 19122
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\Codes_Python\\GroundTruths\\true4.mat",
+          "sha256": "2c32433efcdc93b23ec39d3c8befd8f5b655370eeb717c82309653c998d17805",
+          "bytes": 657
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_TR4_mask64_R2.npy",
+          "sha256": "3c445a4bf7be5e3078072aa4cff9f7b20797270e5b8792794ef856cb0101e753",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_TR4_classes64_R2.npy",
+          "sha256": "03ddbff032dcf964bf2c43b72674acb1e6d30fb2c68c4fa41549f105b3963a44",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "EV_L1_1",
+        "split": "eval",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\evaluation_datasets\\level1\\data1.mat",
+          "sha256": "726c0de67c8dc648357507b45bd40c9c4c76b00a02e3aeb2f9aec7b2d6437ba0",
+          "bytes": 19145
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\GroundTruths\\level_1\\1_true.mat",
+          "sha256": "8162487d82f7572e29de53d05c5659afe68f37dcac9252aae7e17a98765104c6",
+          "bytes": 660
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L1_1_mask64_R2.npy",
+          "sha256": "ee77951a3419bbfd20a5780b3102b9dd45c748dda1afeb688bec3b5fa09b2aca",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L1_1_classes64_R2.npy",
+          "sha256": "4998b901e54a061241f73d8db3a236e628a3af8e812295465646a6d8a1155010",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "EV_L1_2",
+        "split": "eval",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\evaluation_datasets\\level1\\data2.mat",
+          "sha256": "6386a454e97a26cfe2bc80a0b0508a1dc6c1219db4a38d5c528c521e471cc0df",
+          "bytes": 19120
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\GroundTruths\\level_1\\2_true.mat",
+          "sha256": "9bd4b9f57ea27c232d5c9554805e92f8c7d4ecd71e138bdaf98877635fafac32",
+          "bytes": 691
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L1_2_mask64_R2.npy",
+          "sha256": "3b10ebb1aa5aea80f7518209e5177537632e93ec363cc3c1171b531f7d2e9e23",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L1_2_classes64_R2.npy",
+          "sha256": "4e97e5605514e4e4bfbb4409f286da82fbbdbdb317f408abf9365b73be8fe9d4",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "EV_L1_3",
+        "split": "eval",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\evaluation_datasets\\level1\\data3.mat",
+          "sha256": "a86970830e8ff6f644cdef47112d31136b85889e8d8438cc8ea3604906723410",
+          "bytes": 19149
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\GroundTruths\\level_1\\3_true.mat",
+          "sha256": "a983fc597a4462050d02b2f15e3ef23cfd271e0070bfbec7e0e89661284ee529",
+          "bytes": 737
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L1_3_mask64_R2.npy",
+          "sha256": "0785f706fe19114f237171b9faa679d373c43ec8defbe0aa543f4026afb325ba",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L1_3_classes64_R2.npy",
+          "sha256": "c2fcbe78c3838273cf9feb3ee41735f1bb28265ba9f529c0ea2cc23af6fcde29",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "EV_L2_1",
+        "split": "eval",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\evaluation_datasets\\level2\\data1.mat",
+          "sha256": "0f3ef2d5e405af6da146c7e61b72ea53606975b1dfe6a202354c1bc064a8f0ec",
+          "bytes": 19104
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\GroundTruths\\level_2\\1_true.mat",
+          "sha256": "6dba4e03a0d2056817e112c42030a7f0d280c1e4f374d0995eb8bbd0073b17bf",
+          "bytes": 710
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L2_1_mask64_R2.npy",
+          "sha256": "de4e7094d4c6e9d5ab383e053e64ca7c000b6a167ccffa373d7f7199a47ae01d",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L2_1_classes64_R2.npy",
+          "sha256": "5da9a91e1d98f555841e2bd191697e0c9ae794330bf8f9f24743f47dadc94999",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "EV_L2_2",
+        "split": "eval",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\evaluation_datasets\\level2\\data2.mat",
+          "sha256": "a7162747499ace913ea897d393bdfdfb77d0f814a1a9d782f94897aa4b8addd1",
+          "bytes": 19138
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\GroundTruths\\level_2\\2_true.mat",
+          "sha256": "f9160bd7a5b4912cffa2eb0b0f70cb823321363dd8d42bc5c1e86e0ead244151",
+          "bytes": 638
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L2_2_mask64_R2.npy",
+          "sha256": "7ca9b87bce699ca839c2d9809d233482f8c4bac6d1a1b744ff34ed16fc19526c",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L2_2_classes64_R2.npy",
+          "sha256": "25977b8b7ffce63ff2ea44d7e9bd09798928003ae85173ad9bab02b4cb69b245",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "EV_L2_3",
+        "split": "eval",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\evaluation_datasets\\level2\\data3.mat",
+          "sha256": "eb8a8a1a655b94b66fb3fce1b86c15ef940d94fa8cc9648628254d95cc97a44e",
+          "bytes": 19109
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\GroundTruths\\level_2\\3_true.mat",
+          "sha256": "e88d9423781872c4f51ed931753eba0585f70f8aae68efe774278e4ba20e52f7",
+          "bytes": 819
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L2_3_mask64_R2.npy",
+          "sha256": "8c912ada317ff1d04184db5ccd21f8de6f0bb0815fe2f50b0668ee76cdcaff9a",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L2_3_classes64_R2.npy",
+          "sha256": "d845a0bea4ce8828c48e680698bfd22699d4c4d8e94554b3f41b8d9932016af4",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "EV_L3_1",
+        "split": "eval",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\evaluation_datasets\\level3\\data1.mat",
+          "sha256": "e0bf62c4052e0eb035daa93465ac05dd9f665a9cbaa8f4f6a3ed8ed9610dc334",
+          "bytes": 19148
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\GroundTruths\\level_3\\1_true.mat",
+          "sha256": "49664c67ee502e2ab2636148af3896e499aa63b7a61b246f05916650905b9e6e",
+          "bytes": 898
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L3_1_mask64_R2.npy",
+          "sha256": "2025510f2564bcbcb2ebc107dc73e2aa7e124ea0f18706b4c3a46eb028d69b0e",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L3_1_classes64_R2.npy",
+          "sha256": "19756fa1a965f3eddce37b4eed1b845801fccb11740e855b5c1a44bda286e092",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "EV_L3_2",
+        "split": "eval",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\evaluation_datasets\\level3\\data2.mat",
+          "sha256": "903f933fdb3f3f2576c686eb33b14ace8ab397e5a81efba61cde4ced69f10909",
+          "bytes": 19153
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\GroundTruths\\level_3\\2_true.mat",
+          "sha256": "9c0afea9c95393ee85def7b93aced0f60cf7a5ac63eec6c1e88b5a0c68db4a2b",
+          "bytes": 733
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L3_2_mask64_R2.npy",
+          "sha256": "947514dd07ca2295ef5bc9e2d8dcba6cf6e64b50c8bf85ba2be6075ea6d998be",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L3_2_classes64_R2.npy",
+          "sha256": "befc6e60929f2fd08eb3c5a9d8ab25721c2e19bd0ba2be2aab4a7c5b9dd7dc37",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "EV_L3_3",
+        "split": "eval",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\evaluation_datasets\\level3\\data3.mat",
+          "sha256": "de6cdee16dbc6ae8b35719cb434887ed84f5fda95ccddac4dd59e52634fb51ba",
+          "bytes": 19114
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\GroundTruths\\level_3\\3_true.mat",
+          "sha256": "3e8c725156256505f7fff04d72ed103700e3560e84547582b11203e40e0d1d09",
+          "bytes": 566
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L3_3_mask64_R2.npy",
+          "sha256": "305de92d78f2dd1f3062bcdef3ff47f049d44cd80b28c698f0e24cd15912ec6a",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L3_3_classes64_R2.npy",
+          "sha256": "edc3eb5e07f78a788091f21807bb34c80dab73bb26b7acec90baa2d7f2a0d8da",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "EV_L4_1",
+        "split": "eval",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\evaluation_datasets\\level4\\data1.mat",
+          "sha256": "0b594132bfa96361395cf0e79c9b5742faacb60650fdcfed1592fd8301726ce4",
+          "bytes": 19147
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\GroundTruths\\level_4\\1_true.mat",
+          "sha256": "55713b9b98574efcca70d7be481b12981000d0712444656e3192bd7dd354634d",
+          "bytes": 954
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L4_1_mask64_R2.npy",
+          "sha256": "33656ba8135e7d0ad473b588881305b42b7d95abe57c3239a01a947734325892",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L4_1_classes64_R2.npy",
+          "sha256": "e75194b4667151e2bea91aee6fe381a5556e31154cc25211b7318fdc3e89b814",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "EV_L4_2",
+        "split": "eval",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\evaluation_datasets\\level4\\data2.mat",
+          "sha256": "12f9281e428a497b74ec529e5555633bf12129fdeb746c9580365047e5a65ca5",
+          "bytes": 19133
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\GroundTruths\\level_4\\2_true.mat",
+          "sha256": "b97f483af427996b9fd0baf4018bbf1c1b6820885b5346e1d7d850ddb7a7610e",
+          "bytes": 836
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L4_2_mask64_R2.npy",
+          "sha256": "fc927f29fb3b7027a9f027fbdd021c6b9fc70dadfa2f1167cb820b45f4662f43",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L4_2_classes64_R2.npy",
+          "sha256": "157b8a2258c8df698a32d8cc5dbbdc91be4b0525569ebc1f4bb221c9afc1dbb5",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "EV_L4_3",
+        "split": "eval",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\evaluation_datasets\\level4\\data3.mat",
+          "sha256": "0b8c0e8933434aa32761e8c293a303faa0c8c3066791324b974d93cf7582f049",
+          "bytes": 19148
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\GroundTruths\\level_4\\3_true.mat",
+          "sha256": "4f32ff8feb3250951ecfc5029b61aec329890749d79c9e96516894eab33facd8",
+          "bytes": 877
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L4_3_mask64_R2.npy",
+          "sha256": "ce77aa3da9fea089fbaf22e9dd89171bf648f42f34a321b140fd189979e7dbb5",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L4_3_classes64_R2.npy",
+          "sha256": "413b22dd90ab1449f1c706a32800f3a87a9f4b3eb0bce79423bbd6134f3f5781",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "EV_L5_1",
+        "split": "eval",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\evaluation_datasets\\level5\\data1.mat",
+          "sha256": "20867b34e146cc6a3bf2904eed1b29dbab5c0b8cdb7e3275c8670fb7f37a7bd4",
+          "bytes": 19151
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\GroundTruths\\level_5\\1_true.mat",
+          "sha256": "af2abd4db524c623a18c4f5c174567000864e1a6bce018a6d2c458f15bdef637",
+          "bytes": 1136
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L5_1_mask64_R2.npy",
+          "sha256": "c7f28a974d1139a19cca41e6adb49b12d5a4850842036037015c3924992905de",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L5_1_classes64_R2.npy",
+          "sha256": "8f96077b8c22e2810aee405ccbdeaf8a1d82f19d7d5e0255c98f00b2b1808d77",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "EV_L5_2",
+        "split": "eval",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\evaluation_datasets\\level5\\data2.mat",
+          "sha256": "1534a0aee3876369170a8b0ef38d5485133667f09579f10fe4e2c50899446afc",
+          "bytes": 19153
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\GroundTruths\\level_5\\2_true.mat",
+          "sha256": "8f0c2b4668a8090335b2dea90f8c35cb0c20dd5d326ad4084aeed868b60c7314",
+          "bytes": 782
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L5_2_mask64_R2.npy",
+          "sha256": "943d09956db6e548c47ff09760f260dc09ac036e6682c7ceb576dcea0a4cee86",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L5_2_classes64_R2.npy",
+          "sha256": "81f9b4f2b3304560ddf399266d60b8effebba82154f254680ec8a24ce4d047ed",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "EV_L5_3",
+        "split": "eval",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\evaluation_datasets\\level5\\data3.mat",
+          "sha256": "4fcaa29751a2aebd114914ea8a28631b483f74d7c4b1d92a7acafa2833a07167",
+          "bytes": 19121
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\GroundTruths\\level_5\\3_true.mat",
+          "sha256": "54617200fddabeb0529494456a74601636fa556c4c7b267590c4999f9dddb836",
+          "bytes": 741
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L5_3_mask64_R2.npy",
+          "sha256": "55dc2ceb1d74bb38dff18a5fd46d6bc3fe8ccfc586539a14c2a03b85fdd307c3",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L5_3_classes64_R2.npy",
+          "sha256": "ca81f6f6800f8a2f78620f43259c31a6642d9197326c21819c59601cf0c07e1b",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "EV_L6_1",
+        "split": "eval",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\evaluation_datasets\\level6\\data1.mat",
+          "sha256": "582e31262e5f79861f303777ed9792fddadca23f517da9a27b562de0bf7b8677",
+          "bytes": 19109
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\GroundTruths\\level_6\\1_true.mat",
+          "sha256": "fff9c9f21e73b12c257c3cdc76b5ee119e7f538926e41e60188348329d99ff03",
+          "bytes": 1097
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L6_1_mask64_R2.npy",
+          "sha256": "4a5ffd0ad3db5718a4110b3feb7c6a8caa82a168ef8fe197b99ae6349dc2ffbc",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L6_1_classes64_R2.npy",
+          "sha256": "6c26b1911d40529256f367a90d6784632daeb6b329912589dc494db6d5c35407",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "EV_L6_2",
+        "split": "eval",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\evaluation_datasets\\level6\\data2.mat",
+          "sha256": "438206e3573684c00209a8ac679e2714f7c14fef184e00e9483e9f116d5bba8d",
+          "bytes": 19137
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\GroundTruths\\level_6\\2_true.mat",
+          "sha256": "b7d55dd27ff9f7e9c3f544b8ea0b1d7d68a4ed3fdfb2f67d09c7f2b8927b3ffd",
+          "bytes": 1227
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L6_2_mask64_R2.npy",
+          "sha256": "ec701f837b23c67dbca9a553042c67841a2c574e05e1bd0f5e1d7719264fb3fd",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L6_2_classes64_R2.npy",
+          "sha256": "730eb270cd8362b8f5fc270a2e19233772a19c40b2b0818cba68ebcdecefa8d4",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "EV_L6_3",
+        "split": "eval",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\evaluation_datasets\\level6\\data3.mat",
+          "sha256": "75446338b5b4f063fb6181a0a0206bd2ff2b5bb4bebfd3005cfb718b1a102c1a",
+          "bytes": 19143
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\GroundTruths\\level_6\\3_true.mat",
+          "sha256": "7d7932099275e65b8983393aea3184937e31bed506d2b97802ea4965517c3cca",
+          "bytes": 997
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L6_3_mask64_R2.npy",
+          "sha256": "2e95e099c31a45f16b9940111289f5c6072bdc160cd3fba146fd1eb99792baf3",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L6_3_classes64_R2.npy",
+          "sha256": "aef28e77c096744c2cdea1683e55204dbc13114e171df96172c9aaa2d80feb4c",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "EV_L7_1",
+        "split": "eval",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\evaluation_datasets\\level7\\data1.mat",
+          "sha256": "9d000aea21617a37b9fb74aa693beac9e6e6afec7cbe20fe30bc241e9596e8e0",
+          "bytes": 19132
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\GroundTruths\\level_7\\1_true.mat",
+          "sha256": "fb63bdac400f53823e097cba3fe2246f0833c96242ce0f9d2d6a99ac66c409ea",
+          "bytes": 1246
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L7_1_mask64_R2.npy",
+          "sha256": "4e320970a1f261aa2042d37f50115ff46044535e34866e93b471dec8e458b3b2",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L7_1_classes64_R2.npy",
+          "sha256": "2f7632cbe7eac3f108ead07613ff0a7db8d9a5ca59675f702b95a9f19f73fe95",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "EV_L7_2",
+        "split": "eval",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\evaluation_datasets\\level7\\data2.mat",
+          "sha256": "7d8af10b855aefda362ebadf5271356380b5bacff3d7d776a8392a8e850d0006",
+          "bytes": 19143
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\GroundTruths\\level_7\\2_true.mat",
+          "sha256": "0b218a403afb3a4062d61d8ce1a6cb956303c5d035f85be17ce713767b2e6184",
+          "bytes": 1175
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L7_2_mask64_R2.npy",
+          "sha256": "dcf7d13eabf777390e5b2cab49c8268d04cbb95f233f6acd5baecb5a91f49406",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L7_2_classes64_R2.npy",
+          "sha256": "01560e38e644f196133c44aa4eae08083d3de80a06f76ee3346b92815d64ca30",
+          "bytes": 4224
+        }
+      },
+      {
+        "id": "EV_L7_3",
+        "split": "eval",
+        "meas": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\evaluation_datasets\\level7\\data3.mat",
+          "sha256": "f625cd7598410a68435610b146c95be96c186251d805d2745989e31392c9b7d5",
+          "bytes": 19167
+        },
+        "gt": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\data_thuctien\\KTC2023\\EvaluationData_full\\GroundTruths\\level_7\\3_true.mat",
+          "sha256": "4396d4d4a0fe7601a4c61a09d8c0be64e972d2a077c828387296a9468ff6b827",
+          "bytes": 990
+        },
+        "mask64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L7_3_mask64_R2.npy",
+          "sha256": "a44dfe506aae7ae19fd1c6a968387b40b7e93f170694bad23b17d651fd985f82",
+          "bytes": 4224
+        },
+        "classes64": {
+          "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\K0_KTC_AUDIT\\K0R2_EV_L7_3_classes64_R2.npy",
+          "sha256": "074298cf8b0370a7e72d872e44fe15badd5cff22b7f1af4601b308ea0d09965d",
+          "bytes": 4224
+        }
+      }
+    ],
+    "sources": {
+      "03_SRC/ktc/K1B_KTCB_A4_V2_AT.py": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\ktc\\K1B_KTCB_A4_V2_AT.py",
+        "sha256": "996d0b9c829c47ef8537efa8ad5a419b28f1e39073d22f7f65b524ce24c7b702",
+        "bytes": 19076
+      },
+      "03_SRC/pgtta_v1/model/S2R14R_E2EMultiViewShapeNet.py": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\pgtta_v1\\model\\S2R14R_E2EMultiViewShapeNet.py",
+        "sha256": "bc76fda726e196b52478d9bb047e4c1e042fbefa1622a09680a1a341421f11d5",
+        "bytes": 5237
+      },
+      "03_SRC/train/EIT_PhyTTA_V1_B1_E2F_train_100k_WORKING_COPY.py": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\train\\EIT_PhyTTA_V1_B1_E2F_train_100k_WORKING_COPY.py",
+        "sha256": "7fac58921cf04535f47402b385bce14b46685b2cafff9aa6ee90cad3722a127c",
+        "bytes": 43715
+      },
+      "03_SRC/audit/EIT_PhyTTA_V1_C0_FEAS_CALIBRATION_V1.py": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\audit\\EIT_PhyTTA_V1_C0_FEAS_CALIBRATION_V1.py",
+        "sha256": "09827d9f9379cfe801c349b4202e0ec0c992a09672e6b1f043bb8f34eebbc8d2",
+        "bytes": 23292
+      },
+      "03_SRC/audit/EIT_PhyTTA_V1_C1_CALIBRATION_COMPARATORS_V1.py": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\audit\\EIT_PhyTTA_V1_C1_CALIBRATION_COMPARATORS_V1.py",
+        "sha256": "c5b332450c7c843b7534e3265df2298daebe7e1fb3dc805afe74cb0673410d06",
+        "bytes": 25293
+      },
+      "03_SRC/audit/EIT_PhyTTA_V1_C3_FINAL20_CONFIRMATORY_V1.py": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\audit\\EIT_PhyTTA_V1_C3_FINAL20_CONFIRMATORY_V1.py",
+        "sha256": "f3406c5a89824d715957e7d0bcbd763203828186a951c38a6a854a300ce169b5",
+        "bytes": 23230
+      },
+      "03_SRC/audit/EIT_PhyTTA_V1_CMP_RELATED_METHODS_V1.py": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\audit\\EIT_PhyTTA_V1_CMP_RELATED_METHODS_V1.py",
+        "sha256": "2853806967d9f2e61a05c0a7a0eb02cfc6f293495948b056668f84116276f85c",
+        "bytes": 24147
+      },
+      "03_SRC/ktc/ktc_mesh.py": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\ktc\\ktc_mesh.py",
+        "sha256": "5e79d1b0849ba07d1ad19f19d1257f907ecbf5dcef09ed70778589ec57d7dd5f",
+        "bytes": 2084
+      },
+      "03_SRC/ktc/vendor/KTCAux.py": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\ktc\\vendor\\KTCAux.py",
+        "sha256": "1a6fb080479bc8653280cc4f5d04b9c6eee5b98368b4d10d40e23b0eaed6e066",
+        "bytes": 2892
+      },
+      "03_SRC/ktc/vendor/KTCFwd.py": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\ktc\\vendor\\KTCFwd.py",
+        "sha256": "e9946ccac383fe533eb78d536ee97010faa324dac7918c88c2e9c0c0b09d24e0",
+        "bytes": 15313
+      },
+      "03_SRC/ktc/vendor/KTCMeshing.py": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\ktc\\vendor\\KTCMeshing.py",
+        "sha256": "bb77f35caf4fe9f7e98b0af2fafc536f2adbfd3e6901131684163ea5bbe66a6d",
+        "bytes": 12519
+      },
+      "03_SRC/ktc/vendor/KTCRegularization.py": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\ktc\\vendor\\KTCRegularization.py",
+        "sha256": "4ed7d9eff3729fd3111a28c2fb150882baf83dcf40b8ac010dcea459f9bc35cf",
+        "bytes": 2128
+      },
+      "03_SRC/ktc/vendor/KTCScoring.py": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\ktc\\vendor\\KTCScoring.py",
+        "sha256": "b7229ae8638834672da67e6d10773d8c5d0e07840b9ecdbf93f226205224495a",
+        "bytes": 4467
+      },
+      "03_SRC/ktc/vendor/main.py": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\ktc\\vendor\\main.py",
+        "sha256": "9ad61e967943cb38411d9695e2cd57643bbb45377aebcbd63b678c9381a7e28f",
+        "bytes": 7258
+      },
+      "03_SRC/ktc/K2_LOCK_V1.py": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\ktc\\K2_LOCK_V1.py",
+        "sha256": "d2669190617b058ef3bdbfb77caacb1c337dd8aee225b32f7d249ac1db322a01",
+        "bytes": 13737
+      },
+      "03_SRC/ktc/K2_KTC_CONFIRMATORY_V1.py": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\ktc\\K2_KTC_CONFIRMATORY_V1.py",
+        "sha256": "3fb1f49815197291ff239130661f8c8c585afe6adef37ab757df53d06d5e5579",
+        "bytes": 41688
+      },
+      "03_SRC/pgtta_v1/pgtta/baselines.py": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\pgtta_v1\\pgtta\\baselines.py",
+        "sha256": "c0f0b0c9eb829493cb5de23d4c9017ec705387805a1c18a38631f45676b10d29",
+        "bytes": 5519
+      },
+      "03_SRC/pgtta_v1/pgtta/params.py": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\pgtta_v1\\pgtta\\params.py",
+        "sha256": "359680f2e651cb55a12319d9bfac3eeea58fba21664688aa2f7c16b080895d42",
+        "bytes": 1441
+      },
+      "03_SRC/pgtta_v1/pgtta/losses.py": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\pgtta_v1\\pgtta\\losses.py",
+        "sha256": "c65d7adfe53ef12330a9c1ad4d6bba4fe368c76cb9220818459a4958cb4d26ec",
+        "bytes": 1608
+      },
+      "03_SRC/pgtta_v1/pgtta/adapt.py": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\pgtta_v1\\pgtta\\adapt.py",
+        "sha256": "bf094a341880fa0d9a78f7ba9587e76db77571125ce4d46d4e4fc8d8432c4644",
+        "bytes": 2288
+      }
+    },
+    "synthetic_TEST": {
+      "shard_manifest": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\08_DATA_KTC_SYN_AP\\full_50k\\SHARDS_SHA256.csv",
+        "sha256": "163aab588d9766c37b37c7b3f956f9b60ec9a2464d7c07e376500fa38915f6c9",
+        "bytes": 18937
+      },
+      "selection": {
+        "file": "test_00000.npz",
+        "first_n": 200
+      },
+      "first_shard": {
+        "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\08_DATA_KTC_SYN_AP\\full_50k\\test_00000.npz",
+        "sha256": "b5f427ca1cad828f5a6f6a32277711de42a305720a410efddbfd71a923d2093f",
+        "bytes": 4372491
+      }
+    },
+    "settings": {
+      "protocol": "K2_PREREGISTRATION_V1 + AMENDMENT_A1",
+      "training_targets": [
+        "TR1",
+        "TR2",
+        "TR3",
+        "TR4"
+      ],
+      "evaluation_targets": [
+        "EV_L1_1",
+        "EV_L1_2",
+        "EV_L1_3",
+        "EV_L2_1",
+        "EV_L2_2",
+        "EV_L2_3",
+        "EV_L3_1",
+        "EV_L3_2",
+        "EV_L3_3",
+        "EV_L4_1",
+        "EV_L4_2",
+        "EV_L4_3",
+        "EV_L5_1",
+        "EV_L5_2",
+        "EV_L5_3",
+        "EV_L6_1",
+        "EV_L6_2",
+        "EV_L6_3",
+        "EV_L7_1",
+        "EV_L7_2",
+        "EV_L7_3"
+      ],
+      "n_calibration": 4,
+      "n_evaluation": 21,
+      "calibration_seed": 20261025,
+      "seed_rule": "torch.manual_seed(20261025) and torch.cuda.manual_seed_all(20261025) immediately before EACH calibration, LoRA construction, subset calibration and per-case TENT",
+      "bootstrap_seed": 20261024,
+      "bootstrap_resamples": 10000,
+      "signflip_patterns": 2097152,
+      "primary": "mean(CAL-GN Dice_head minus Frozen Dice_head), n=21, two-sided exact p<0.05, bootstrap lower>0, mean>0",
+      "secondary": "S1 descriptive Wilson; Holm across exact tests S2 GN-FULL, S3 GN-LoRA, S4 GN-BitFit only",
+      "prediction": "0.627 - 0.666 * Dice_frozen; exploratory Spearman bootstrap",
+      "image_centre": "none",
+      "input": "K1b A4/AT, delta U, raw z0 Z@delta with outside disk zero, J A.T@zscore(delta), view_id=0",
+      "metric_roi": "pixel centres within radius 0.115 m on 64x64 organiser frame",
+      "calibration_loss": "BCEWithLogits mask_logit vs K0 mask64, mean over ROI pixels, per-case accumulated full batch",
+      "threshold": "sigmoid(mask_logit)>0.5",
+      "methods": {
+        "Frozen": {
+          "steps": 0,
+          "trainable": "none"
+        },
+        "CAL-GN": {
+          "optimizer": "Adam",
+          "lr": 0.01,
+          "steps": 100,
+          "trainable": "GroupNorm.weight,bias"
+        },
+        "CAL-LoRA": {
+          "optimizer": "Adam",
+          "lr": 0.001,
+          "steps": 100,
+          "trainable": "rank4_18_ConvBlock_convs_A_normal_0.01_B_zero_scale1"
+        },
+        "CAL-FULL": {
+          "optimizer": "Adam",
+          "lr": 0.0001,
+          "steps": 100,
+          "trainable": "all_parameters"
+        },
+        "CAL-BitFit": {
+          "optimizer": "Adam",
+          "lr": 0.01,
+          "steps": 100,
+          "trainable": "all_leaf_bias_parameters"
+        },
+        "TENT": {
+          "optimizer": "Adam",
+          "lr": 0.001,
+          "steps": 10,
+          "trainable": "GroupNorm_affine_per_case",
+          "exploratory": true
+        },
+        "Classical": {
+          "method": "organiser_one_step_plus_Otsu2",
+          "exploratory": false
+        }
+      },
+      "exploratory_subsets": "all 14 nonempty proper subsets of TR1:TR4",
+      "synthetic_context": "first 200 records of first sorted test shard; organiser one-step plus Otsu2; report only",
+      "organiser_score": "KTCScoring.scoringFunction, KTCScoring.ssim, FFT-equivalent convolution only after direct/FFT numerical parity <= 1e-10",
+      "no_second_run": true,
+      "no_final20_access": true
+    },
+    "settings_sha256": "add53e399ae9a7b23bab53583830b48d00a5f2ea6fbe470dd3cda0e983b95a66"
+  }
+}

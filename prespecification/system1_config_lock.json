@@ -1,0 +1,413 @@
+{
+  "phase": "C3",
+  "status": "LOCKED_BEFORE_FINAL20",
+  "created_utc": "2026-10-17T13:01:38.358604+00:00",
+  "authorisation": "C3 AUTHORISED 2026-10-17; Tuan scope confirmed",
+  "sources": {
+    "B1_checkpoint": {
+      "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\04_RUNS\\B1_E2F_100k_clean_Asigma\\ckpt\\best_clean_dice_head.pt",
+      "sha256": "f29b22750c323a1864aef62c3953e290819369ff3ae0c50dc73aeb6d7fdfb652"
+    },
+    "B1_backbone": {
+      "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\models\\legacy_backbone\\S2R14R_E2EMultiViewShapeNet.py",
+      "sha256": "bc76fda726e196b52478d9bb047e4c1e042fbefa1622a09680a1a341421f11d5"
+    },
+    "R64_operator": {
+      "path": "E:\\Tuan\\EIT\\Deeplearning\\data\\Data_260911_REALDATA01_\\Data_260911_REALDATA01_PhysicsOperator_R64.mat",
+      "sha256": "f1a93a132e710fef91ca968816c57b09106052123340f9a864189ee53a00b53c"
+    },
+    "split_json": {
+      "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\02_SPLITS\\REAL_DATA02_DEV_FINAL_SPLIT_V1.json",
+      "sha256": "12f25ea5d8ac974db74ecd605384446944385ba1a520583a9b9c97bb9de79944"
+    },
+    "C0_script": {
+      "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\C0_FEAS_CALIBRATION\\EIT_PhyTTA_V1_C0_FEAS_CALIBRATION_V1.py",
+      "sha256": "09827d9f9379cfe801c349b4202e0ec0c992a09672e6b1f043bb8f34eebbc8d2"
+    },
+    "C1_script": {
+      "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\C1_CALIBRATION_COMPARATORS\\EIT_PhyTTA_V1_C1_CALIBRATION_COMPARATORS_V1.py",
+      "sha256": "c5b332450c7c843b7534e3265df2298daebe7e1fb3dc805afe74cb0673410d06"
+    },
+    "C0_sampling_plan": {
+      "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\C0_FEAS_CALIBRATION\\calibration_plan.json",
+      "sha256": "3efd87be32a3548e7ba3a298641b839abe72e0520c5c4bd1153007fcff5a2587"
+    },
+    "C0_manifest": {
+      "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\C0_FEAS_CALIBRATION\\SHA256SUMS.txt",
+      "sha256": "2b6f8f0dd3848a966ebc871f16c95c52bf3d8ed5919b2339bca74e8563798951"
+    },
+    "C1_manifest": {
+      "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\05_RESULTS\\RUNBOOK\\C1_CALIBRATION_COMPARATORS\\SHA256SUMS.txt",
+      "sha256": "6ca370fdc24d17d5b6e3696a9e1988d8edaaf9e0d519276e69930ea233f8765b"
+    },
+    "C3_script": {
+      "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\audit\\EIT_PhyTTA_V1_C3_FINAL20_CONFIRMATORY_V1.py",
+      "sha256": "f3406c5a89824d715957e7d0bcbd763203828186a951c38a6a854a300ce169b5"
+    },
+    "final_group_mapping": {
+      "path": "E:\\Tuan\\EIT\\Deeplearning\\EIT_PhyTTA_V1\\03_SRC\\audit\\C3_FINAL20_GROUPS_V1.json",
+      "sha256": "298f3f79a944a1c1101394b4dd7869393e941904b7d8d2511fc74e9ef52c96ed"
+    }
+  },
+  "split_verification": {
+    "split_sha256": "12f25ea5d8ac974db74ecd605384446944385ba1a520583a9b9c97bb9de79944",
+    "final_ids_verified": [
+      1,
+      4,
+      7,
+      15,
+      22,
+      24,
+      26,
+      31,
+      36,
+      45,
+      46,
+      49,
+      51,
+      53,
+      57,
+      60,
+      62,
+      70,
+      72,
+      78
+    ]
+  },
+  "calibration_policy": "P-ANY",
+  "calibration_k": 5,
+  "draws": [
+    {
+      "draw": 0,
+      "seed": 20261517,
+      "calibration_ids": [
+        3,
+        6,
+        35,
+        48,
+        64
+      ]
+    },
+    {
+      "draw": 1,
+      "seed": 20261518,
+      "calibration_ids": [
+        5,
+        13,
+        20,
+        27,
+        65
+      ]
+    },
+    {
+      "draw": 2,
+      "seed": 20261519,
+      "calibration_ids": [
+        21,
+        37,
+        48,
+        61,
+        63
+      ]
+    },
+    {
+      "draw": 3,
+      "seed": 20261520,
+      "calibration_ids": [
+        16,
+        21,
+        38,
+        40,
+        63
+      ]
+    },
+    {
+      "draw": 4,
+      "seed": 20261521,
+      "calibration_ids": [
+        18,
+        20,
+        23,
+        44,
+        71
+      ]
+    },
+    {
+      "draw": 5,
+      "seed": 20261522,
+      "calibration_ids": [
+        2,
+        5,
+        10,
+        20,
+        54
+      ]
+    },
+    {
+      "draw": 6,
+      "seed": 20261523,
+      "calibration_ids": [
+        9,
+        27,
+        29,
+        48,
+        65
+      ]
+    },
+    {
+      "draw": 7,
+      "seed": 20261524,
+      "calibration_ids": [
+        16,
+        40,
+        42,
+        64,
+        77
+      ]
+    },
+    {
+      "draw": 8,
+      "seed": 20261525,
+      "calibration_ids": [
+        8,
+        12,
+        33,
+        43,
+        44
+      ]
+    },
+    {
+      "draw": 9,
+      "seed": 20261526,
+      "calibration_ids": [
+        6,
+        18,
+        55,
+        74,
+        76
+      ]
+    },
+    {
+      "draw": 10,
+      "seed": 20261527,
+      "calibration_ids": [
+        11,
+        19,
+        27,
+        39,
+        48
+      ]
+    },
+    {
+      "draw": 11,
+      "seed": 20261528,
+      "calibration_ids": [
+        11,
+        13,
+        29,
+        34,
+        52
+      ]
+    },
+    {
+      "draw": 12,
+      "seed": 20261529,
+      "calibration_ids": [
+        9,
+        40,
+        50,
+        68,
+        74
+      ]
+    },
+    {
+      "draw": 13,
+      "seed": 20261530,
+      "calibration_ids": [
+        9,
+        43,
+        63,
+        69,
+        73
+      ]
+    },
+    {
+      "draw": 14,
+      "seed": 20261531,
+      "calibration_ids": [
+        13,
+        18,
+        64,
+        65,
+        67
+      ]
+    },
+    {
+      "draw": 15,
+      "seed": 20261532,
+      "calibration_ids": [
+        10,
+        18,
+        21,
+        61,
+        63
+      ]
+    },
+    {
+      "draw": 16,
+      "seed": 20261533,
+      "calibration_ids": [
+        6,
+        34,
+        40,
+        41,
+        61
+      ]
+    },
+    {
+      "draw": 17,
+      "seed": 20261534,
+      "calibration_ids": [
+        17,
+        27,
+        35,
+        68,
+        71
+      ]
+    },
+    {
+      "draw": 18,
+      "seed": 20261535,
+      "calibration_ids": [
+        11,
+        14,
+        17,
+        20,
+        39
+      ]
+    },
+    {
+      "draw": 19,
+      "seed": 20261536,
+      "calibration_ids": [
+        5,
+        9,
+        25,
+        37,
+        40
+      ]
+    }
+  ],
+  "methods": {
+    "CAL-GN": {
+      "lr": 0.01,
+      "steps": 100,
+      "trainable": 5888
+    },
+    "CAL-LoRA": {
+      "lr": 0.001,
+      "steps": 100,
+      "rank": 4,
+      "trainable": 116680
+    },
+    "CAL-FULL": {
+      "lr": 0.0001,
+      "steps": 100,
+      "trainable": 8593890
+    },
+    "CAL-FB": {
+      "lr": 0.01,
+      "steps": 100,
+      "trainable": 2944
+    },
+    "CAL-HEAD": {
+      "lr": 0.001,
+      "steps": 100,
+      "trainable": 18562
+    },
+    "Frozen B1": {
+      "lr": null,
+      "steps": 0,
+      "trainable": 0
+    }
+  },
+  "evaluator": {
+    "gt": "gt_mask_64 >= 0.5",
+    "roi": "isfinite(gt_image)",
+    "head": "sigmoid(mask_logit) > 0.5",
+    "sigma": "abs(pred_sigma - 1) > 0.05",
+    "empty_mask_dice": "1 if both empty",
+    "hd95": "95th percentile of symmetric foreground-border distances, in 64x64 pixels"
+  },
+  "primary": {
+    "metric": "mean over 20 FINAL20 cases of per-case mean over 20 draws of GN minus Frozen head Dice",
+    "bootstrap_n": 10000,
+    "bootstrap_seed": 20261020,
+    "test": "exact 2-sided sign-flip",
+    "success": "bootstrap CI lower > 0"
+  },
+  "secondary": {
+    "family": [
+      "ACRYLIC14 GN vs frozen NI -0.005",
+      "GN vs LoRA NI -0.01",
+      "GN vs FULL NI -0.01"
+    ],
+    "holm_adjustment": true,
+    "harm": "delta_dice < -0.005 over FINAL20 case-by-draw pairs",
+    "mixed_n": 6,
+    "acrylic_n": 14
+  },
+  "final_ids": [
+    1,
+    4,
+    7,
+    15,
+    22,
+    24,
+    26,
+    31,
+    36,
+    45,
+    46,
+    49,
+    51,
+    53,
+    57,
+    60,
+    62,
+    70,
+    72,
+    78
+  ],
+  "final_groups": {
+    "1": "acrylic",
+    "4": "acrylic",
+    "7": "acrylic",
+    "15": "acrylic",
+    "22": "acrylic",
+    "24": "acrylic",
+    "26": "acrylic",
+    "31": "acrylic",
+    "36": "acrylic",
+    "45": "acrylic",
+    "46": "acrylic",
+    "49": "acrylic",
+    "51": "acrylic",
+    "53": "acrylic",
+    "57": "mixed",
+    "60": "mixed",
+    "62": "mixed",
+    "70": "mixed",
+    "72": "mixed",
+    "78": "mixed"
+  },
+  "prohibited": [
+    "PERT-TEST",
+    "REAL01",
+    "other REAL02 variables"
+  ],
+  "c0_artifacts_verified": 10,
+  "c1_artifacts_verified": 10,
+  "baseline_dev_parity": 0.8669902896638151,
+  "no_model_selection": true
+}

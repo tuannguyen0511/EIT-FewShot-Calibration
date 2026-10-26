@@ -1,0 +1,9 @@
+# K2 PREREGISTRATION V1 — Amendment A1 (director, 2026-10-25; written BEFORE K2_LOCK and before any evaluation-target prediction)
+Base document: `K2_PREREGISTRATION_V1.md`, SHA256 3e04fe996e665371a95c3cfcf68897d56cbfb42e0b96747faa3ad89dcbd6a8b4 (unchanged). K2_LOCK.json must record the SHA256 of BOTH files. Nothing else in the base document changes.
+
+1. **Secondary family (§4) — clarification.** S1 (P_harm) is descriptive only (Wilson 95 % CI, no p-value). The Holm correction applies to the THREE inferential comparisons S2 (CAL-GN − CAL-FULL), S3 (CAL-GN − CAL-LoRA), S4 (CAL-GN − CAL-BitFit), each with a two-sided exact sign-flip p-value over all 2²¹ patterns; family-wise α = 0.05.
+
+2. **Executor structure (§7) — clarification.** "One script" means exactly one prediction/evaluation executor (`K2_KTC_CONFIRMATORY_V1.py`) that produces every prediction on the 21 evaluation targets in a single run. A separate lock helper (`K2_LOCK_V1.py`) that computes and writes SHAs and makes NO prediction on any evaluation target is permitted and must run first. The dry-run mode may predict only on TR1.
+
+3. **Added exploratory label-free comparator (§6).** TENT, per test case, on the frozen KTC-B: minimise the mean binary entropy of sigmoid(mask_logit) over ROI pixels, trainable = GroupNorm γ, β, Adam lr 1e-3 (CMP DEV-selected value), 10 steps per case (K = 10, as in the CMP `tent()` implementation), weights reset after each case; no labels. Reported as ΔDice vs frozen with exact sign-flip p and bootstrap CI, labelled exploratory. Purpose: test whether the label-free null (claim C1) recurs on an independent system. It does not enter the primary or secondary endpoints.
+   If the CMP TENT implementation uses a different step count or loss detail, copy the CMP implementation exactly and report its settings; do not tune.
