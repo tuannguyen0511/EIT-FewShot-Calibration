@@ -14,7 +14,26 @@ Code accompanying *When Is Few-Shot Calibration Enough? A Pre-Specified Multi-Sy
 | `prespecification/` | System 1 configuration lock and System 3 pre-specification, amendment and lock file (SHA-256). |
 | `results/` | Per-case results of the two confirmatory tests (System 1: 20 cases; System 3: 21 targets). |
 
-Trained weights (`backbone_A_16el.pt`, 16 electrodes/208 voltages; `backbone_A32_KTC.pt`, 32 electrodes/2356 voltages) are attached to the archived release (https://github.com/tuannguyen0511/PhyTTA/releases/tag/v1.0.0).
+## Identifiers in the archived records
+Files in `prespecification/` and `results/` are archived exactly as they were hash-locked, so they keep the
+internal identifiers used during the study. Mapping to the paper:
+| Internal identifier | Paper |
+|---|---|
+| REAL02 | System 1 |
+| REAL01 | System 2 (provisional labels) |
+| KTC / KTC 2023 | System 3 |
+| DEV59 / FINAL20 | System 1 development set (59 cases) / confirmatory set (20 cases) |
+| B1 | backbone A (16 electrodes) |
+| KTC-B | backbone A32 (32 electrodes) |
+| T1 / T2 | backbone B (no FiLM) / backbone C (BatchNorm) |
+| CAL-GN | GroupNorm-affine calibration |
+| CAL-LoRA / CAL-FULL / CAL-BitFit | LoRA / full fine-tuning / BitFit calibration |
+| K2 | System 3 confirmatory test |
+| PhyTTA | internal project code name |
+
+Line endings of archived files are preserved byte-for-byte (see .gitattributes) so that SHA256SUMS.txt verifies after cloning.
+
+Trained weights (`backbone_A_16el.pt`, 16 electrodes/208 voltages; `backbone_A32_KTC.pt`, 32 electrodes/2356 voltages) are attached to the archived release (https://github.com/tuannguyen0511/EIT-FewShot-Calibration/releases/tag/v1.0.1).
 
 ```python
 from eit_calib.model import E2EMultiViewShapeNet
