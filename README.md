@@ -14,7 +14,7 @@ Code accompanying *When Is Few-Shot Calibration Enough? A Pre-Specified Multi-Sy
 | `prespecification/` | System 1 configuration lock and System 3 pre-specification, amendment and lock file (SHA-256). |
 | `results/` | Per-case results of the two confirmatory tests (System 1: 20 cases; System 3: 21 targets). |
 
-Trained weights (`backbone_A_16el.pt`, 16 electrodes/208 voltages; `backbone_A32_KTC.pt`, 32 electrodes/2356 voltages) are attached to the archived release ([Zenodo DOI]).
+Trained weights (`backbone_A_16el.pt`, 16 electrodes/208 voltages; `backbone_A32_KTC.pt`, 32 electrodes/2356 voltages) are attached to the archived release (https://github.com/tuannguyen0511/PhyTTA/releases/tag/v1.0.0).
 
 ```python
 from eit_calib.model import E2EMultiViewShapeNet
@@ -29,7 +29,7 @@ sigma, support = predict(calibrated, test_images, test_voltages)
 System 2 (KIT4, Hauptmann et al., arXiv:1704.01178) and System 3 (KTC 2023, Zenodo doi:10.5281/zenodo.10986692) are public. System 1 data are available from their original authors (Deng et al., IEEE Trans. Ind. Electron., 2026). Simulated training data, the full experiment pipeline, additional backbones and further result tables are available from the corresponding authors on reasonable request.
 
 ## Citation
-Please cite the paper if you use this code ([citation to be added]).
+Please cite the paper if you use this code (Manuscript under review).
 
 ## License
 MIT (see `LICENSE`).
